@@ -1,0 +1,394 @@
+# The papers of this hub, one [[paper]] per repository to be, grouped by family: the statistical
+# limits of phylogenetic inference, its consistency and sample complexity, and the asymptotics of
+# its tests.
+#
+# Started on 2026-11-25 from the maintainer's division of the collection into hubs of inference and
+# hubs of theory. Authors, years, titles and links were checked against Crossref. Each formalization
+# records the exact citation in its Phase 0, and corrects the entry here.
+#
+# Fields of a paper:
+#   id          the repository is lean4-<id>: the method's name in lower case when the paper names
+#               one, otherwise first author and year, with a keyword when two papers would share it
+#   family      the [[family]] it belongs to (each paper is in exactly one)
+#   order       its place in the family, by priority
+#   short       the method's name, when it has one
+#   kind        "theory" (a consistency, sample-complexity or impossibility theorem),
+#               "theory+algorithm", or "method"
+#   root        the Lean package, the root of its code and, by default, the paper's name: the
+#               method's name, otherwise first author and year (lean4-phylogenetics'
+#               docs/CONVENTIONS.md, Section 2)
+#   paper       optional: the paper's name, when it is not the root (CONVENTIONS, Section 2)
+#   status      "todo", "partial" (some results are formalized elsewhere: see covered_by),
+#               "in-progress" (its repository exists), or "formalized"
+#   repo        only when the repository is not named lean4-<id>, as for papers on one topic that
+#               share a repository (CONVENTIONS, Section 3)
+#   commit      for a formalized paper: the commit that other repositories require
+#   uses        other hubs whose library its formalization requires, besides this one
+#   builds_on   ids of papers, of any hub's catalog, whose results its proofs use. Only what is known
+#               before the paper's inventory; its Phase 1 completes the list here
+#   covered_by  what is already formalized, and where
+#   note        anything else
+
+[[family]]
+id = 1
+title = "Fast convergence and information-theoretic sample complexity"
+priority = "highest"
+
+[[family]]
+id = 2
+title = "Statistical consistency and model misspecification"
+
+[[family]]
+id = 3
+title = "Gene-tree discordance and limits of species-tree inference"
+
+[[family]]
+id = 4
+title = "Identifiability and consistency under insertion–deletion models"
+priority = "high"
+
+[[family]]
+id = 5
+title = "Asymptotic inference near singularities and boundaries"
+
+# ---------------------------------------------------------------------------------------------
+# 1. Fast convergence and information-theoretic sample complexity
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "erdos1999-part1"
+family = 1
+order = 1
+authors = "Erdős, Steel, Székely, Warnow"
+year = "1999"
+title = "A Few Logs Suffice to Build (Almost) All Trees (I)"
+url = "https://doi.org/10.1002/(SICI)1098-2418(199903)14:2%3C153::AID-RSA3%3E3.0.CO;2-R"
+kind = "theory+algorithm"
+root = "Erdos1999Part1"
+status = "todo"
+
+[[paper]]
+id = "erdos1999-part2"
+family = 1
+order = 2
+authors = "Erdős, Steel, Székely, Warnow"
+year = "1999"
+title = "A Few Logs Suffice to Build (Almost) All Trees, Part II"
+url = "https://doi.org/10.1016/S0304-3975(99)00028-6"
+kind = "theory+algorithm"
+root = "Erdos1999Part2"
+status = "todo"
+builds_on = ["erdos1999-part1"]
+
+[[paper]]
+id = "warnow2001"
+family = 1
+order = 3
+authors = "Warnow, Moret, St. John"
+year = "2001"
+title = "Absolute Convergence: True Trees from Short Sequences"
+url = "https://dl.acm.org/doi/10.5555/365411.365443"
+kind = "theory+algorithm"
+root = "Warnow2001"
+status = "todo"
+note = "In the proceedings of SODA 2001, with no DOI: the link is the ACM Digital Library's page."
+
+[[paper]]
+id = "nakhleh2001"
+family = 1
+order = 4
+authors = "Nakhleh et al."
+year = "2001"
+title = "Designing Fast Converging Phylogenetic Methods"
+url = "https://doi.org/10.1093/bioinformatics/17.suppl_1.s190"
+kind = "theory+algorithm"
+root = "Nakhleh2001"
+status = "todo"
+
+[[paper]]
+id = "mossel2004"
+family = 1
+order = 5
+authors = "Mossel"
+year = "2004"
+title = "Phase Transitions in Phylogeny"
+url = "https://doi.org/10.1090/S0002-9947-03-03382-8"
+kind = "theory"
+root = "Mossel2004"
+status = "todo"
+
+[[paper]]
+id = "mossel2007"
+family = 1
+order = 6
+authors = "Mossel"
+year = "2007"
+title = "Distorted Metrics on Trees and Phylogenetic Forests"
+url = "https://doi.org/10.1109/TCBB.2007.1010"
+kind = "theory+algorithm"
+root = "Mossel2007"
+status = "todo"
+
+[[paper]]
+id = "roch2010"
+family = 1
+order = 7
+authors = "Roch"
+year = "2010"
+title = "Toward Extracting All Phylogenetic Information from Matrices of Evolutionary Distances"
+url = "https://doi.org/10.1126/science.1182300"
+kind = "theory+algorithm"
+root = "Roch2010"
+status = "todo"
+
+[[paper]]
+id = "daskalakis2011"
+family = 1
+order = 8
+authors = "Daskalakis, Mossel, Roch"
+year = "2011"
+title = "Evolutionary Trees and the Ising Model on the Bethe Lattice: A Proof of Steel's Conjecture"
+url = "https://doi.org/10.1007/s00440-009-0246-2"
+kind = "theory+algorithm"
+root = "Daskalakis2011"
+status = "todo"
+note = "First as Optimal Phylogenetic Reconstruction, in STOC 2006 (https://doi.org/10.1145/1132516.1132540; arXiv math/0509575)."
+
+[[paper]]
+id = "mossel2011"
+family = 1
+order = 9
+authors = "Mossel, Roch, Sly"
+year = "2011"
+title = "On the Inference of Large Phylogenies with Long Branches: How Long Is Too Long?"
+url = "https://doi.org/10.1007/s11538-010-9584-6"
+kind = "theory+algorithm"
+root = "Mossel2011"
+status = "todo"
+
+[[paper]]
+id = "gronau2012"
+family = 1
+order = 10
+authors = "Gronau, Moran, Snir"
+year = "2012"
+title = "Fast and Reliable Reconstruction of Phylogenetic Trees with Indistinguishable Edges"
+url = "https://doi.org/10.1002/rsa.20372"
+kind = "theory+algorithm"
+root = "Gronau2012"
+status = "todo"
+
+[[paper]]
+id = "roch2017"
+family = 1
+order = 11
+authors = "Roch, Sly"
+year = "2017"
+title = "Phase Transition in the Sample Complexity of Likelihood-Based Phylogeny Inference"
+url = "https://doi.org/10.1007/s00440-017-0793-x"
+kind = "theory"
+root = "Roch2017"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 2. Statistical consistency and model misspecification
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "felsenstein1978"
+family = 2
+order = 1
+authors = "Felsenstein"
+year = "1978"
+title = "Cases in Which Parsimony or Compatibility Methods Will Be Positively Misleading"
+url = "https://doi.org/10.2307/2412923"
+kind = "theory"
+root = "Felsenstein1978"
+status = "todo"
+
+[[paper]]
+id = "kolaczkowski2004"
+family = 2
+order = 2
+authors = "Kolaczkowski, Thornton"
+year = "2004"
+title = "Performance of Maximum Parsimony and Likelihood Phylogenetics When Evolution Is Heterogeneous"
+url = "https://doi.org/10.1038/nature02917"
+kind = "theory"
+root = "Kolaczkowski2004"
+status = "todo"
+
+[[paper]]
+id = "stefankovic2007-pitfalls"
+family = 2
+order = 3
+authors = "Štefankovič, Vigoda"
+year = "2007"
+title = "Pitfalls of Heterogeneous Processes for Phylogenetic Reconstruction"
+url = "https://doi.org/10.1080/10635150701245388"
+kind = "theory"
+root = "Stefankovic2007Pitfalls"
+status = "todo"
+
+[[paper]]
+id = "steel2011"
+family = 2
+order = 4
+authors = "Steel"
+year = "2011"
+title = "Can We Avoid \"SIN\" in the House of \"No Common Mechanism\"?"
+url = "https://doi.org/10.1093/sysbio/syq069"
+kind = "theory"
+root = "Steel2011"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 3. Gene-tree discordance and limits of species-tree inference
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "takahata1989"
+family = 3
+order = 1
+authors = "Takahata"
+year = "1989"
+title = "Gene Genealogy in Three Related Populations: Consistency Probability Between Gene and Population Trees"
+url = "https://doi.org/10.1093/genetics/122.4.957"
+kind = "theory"
+root = "Takahata1989"
+status = "todo"
+
+[[paper]]
+id = "degnan2006"
+family = 3
+order = 2
+authors = "Degnan, Rosenberg"
+year = "2006"
+title = "Discordance of Species Trees with Their Most Likely Gene Trees"
+url = "https://doi.org/10.1371/journal.pgen.0020068"
+kind = "theory"
+root = "Degnan2006"
+status = "todo"
+
+[[paper]]
+id = "kubatko2007"
+family = 3
+order = 3
+authors = "Kubatko, Degnan"
+year = "2007"
+title = "Inconsistency of Phylogenetic Estimates from Concatenated Data Under Coalescence"
+url = "https://doi.org/10.1080/10635150601146041"
+kind = "theory"
+root = "Kubatko2007"
+status = "todo"
+
+[[paper]]
+id = "degnan2013"
+family = 3
+order = 4
+authors = "Degnan"
+year = "2013"
+title = "Anomalous Unrooted Gene Trees"
+url = "https://doi.org/10.1093/sysbio/syt023"
+kind = "theory"
+root = "Degnan2013"
+status = "todo"
+
+[[paper]]
+id = "roch2015"
+family = 3
+order = 5
+authors = "Roch, Steel"
+year = "2015"
+title = "Likelihood-Based Tree Reconstruction on a Concatenation of Aligned Sequence Data Sets Can Be Statistically Inconsistent"
+url = "https://doi.org/10.1016/j.tpb.2014.12.005"
+kind = "theory"
+root = "Roch2015"
+status = "todo"
+
+[[paper]]
+id = "solislemus2016"
+family = 3
+order = 6
+authors = "Solís-Lemus, Yang, Ané"
+year = "2016"
+title = "Inconsistency of Species Tree Methods Under Gene Flow"
+url = "https://doi.org/10.1093/sysbio/syw030"
+kind = "theory"
+root = "SolisLemus2016"
+status = "todo"
+
+[[paper]]
+id = "nute2018"
+family = 3
+order = 7
+authors = "Nute et al."
+year = "2018"
+title = "The Performance of Coalescent-Based Species Tree Estimation Methods Under Models of Missing Data"
+url = "https://doi.org/10.1186/s12864-018-4619-8"
+kind = "theory"
+root = "Nute2018"
+status = "todo"
+
+[[paper]]
+id = "roch2019"
+family = 3
+order = 8
+authors = "Roch, Nute, Warnow"
+year = "2019"
+title = "Long-Branch Attraction in Species Tree Estimation: Inconsistency of Partitioned Likelihood and Summary Methods"
+url = "https://doi.org/10.1093/sysbio/syy061"
+kind = "theory"
+root = "Roch2019"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 4. Identifiability and consistency under insertion–deletion models
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "thatte2006"
+family = 4
+order = 1
+authors = "Thatte"
+year = "2006"
+title = "Invertibility of the TKF Model of Sequence Evolution"
+url = "https://doi.org/10.1016/j.mbs.2005.12.025"
+kind = "theory"
+root = "Thatte2006"
+status = "todo"
+builds_on = ["thorne1991"]
+note = "With Fan, Legried, Roch 2020 (fan2020): the identifiability of the TKF91 model and the consistent estimation of distances from ever longer sequences are different properties."
+
+[[paper]]
+id = "fan2020"
+family = 4
+order = 2
+authors = "Fan, Legried, Roch"
+year = "2020"
+title = "Impossibility of Consistent Distance Estimation from Sequence Lengths Under the TKF91 Model"
+url = "https://doi.org/10.1007/s11538-020-00801-3"
+kind = "theory"
+root = "Fan2020"
+status = "todo"
+builds_on = ["thorne1991"]
+note = "With Thatte 2006 (thatte2006): the identifiability of the TKF91 model and the consistent estimation of distances from ever longer sequences are different properties."
+
+# ---------------------------------------------------------------------------------------------
+# 5. Asymptotic inference near singularities and boundaries
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "mitchell2019"
+family = 5
+order = 1
+authors = "Mitchell, Allman, Rhodes"
+year = "2019"
+title = "Hypothesis Testing Near Singularities and Boundaries"
+url = "https://doi.org/10.1214/19-EJS1576"
+kind = "theory"
+root = "Mitchell2019"
+status = "partial"
+covered_by = [
+  { repo = "lean4-phylo-network", what = "Theorem 3.1 for the trinomial cut model, and Propositions 4.1, 4.2, 5.1 and 5.2: the limit laws and the densities of the T3 and T1 statistics (PhyloNetwork/External/MitchellAllmanRhodes2019/)" },
+]
