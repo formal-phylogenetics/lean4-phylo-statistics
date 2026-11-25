@@ -2,10 +2,10 @@
 
 The library of this hub: the definitions and results that two or more papers on the statistical
 theory of phylogenetic inference use, and that the root library
-[lean4-phylogenetics](https://github.com/vltanh/lean4-phylogenetics) does not hold. Each goes to the
-lowest node of the tree above every repository that uses it: a result that one paper uses stays in
-that paper's repository; one that papers of several hubs use, or that textbooks state, goes to the
-root library.
+[lean4-phylogenetics](https://github.com/formal-phylogenetics/lean4-phylogenetics) does not hold.
+Each goes to the lowest node of the tree above every repository that uses it: a result that one
+paper uses stays in that paper's repository; one that papers of several hubs use, or that textbooks
+state, goes to the root library.
 
 It has no modules yet. What the papers of this hub share so far is in the root library: trees and
 tree metrics, the coalescents and the multispecies coalescent.

@@ -1,7 +1,7 @@
 {"version": "1.3.0",
  "packagesDir": ".lake/packages",
  "packages":
- [{"url": "https://github.com/vltanh/lean4-phylogenetics",
+ [{"url": "https://github.com/formal-phylogenetics/lean4-phylogenetics",
    "type": "git",
    "subDir": null,
    "scope": "",

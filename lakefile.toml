@@ -12,7 +12,7 @@ maxSynthPendingDepth = 3
 # The root of the collection: the shared library of phylogenetics.
 [[require]]
 name = "Phylogenetics"
-git = "https://github.com/vltanh/lean4-phylogenetics"
+git = "https://github.com/formal-phylogenetics/lean4-phylogenetics"
 rev = "3fcabfd7d191990dda268b0b3968d945b65eb59a"
 
 [[require]]
