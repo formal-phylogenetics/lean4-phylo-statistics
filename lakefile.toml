@@ -1,0 +1,26 @@
+name = "PhyloStatistics"
+version = "0.1.0"
+keywords = ["math", "phylogenetics"]
+description = "What the formalizations of the papers on the statistical theory of phylogenetic inference share"
+defaultTargets = ["PhyloStatistics"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+maxSynthPendingDepth = 3
+
+# The root of the collection: the shared library of phylogenetics.
+[[require]]
+name = "Phylogenetics"
+git = "https://github.com/vltanh/lean4-phylogenetics"
+rev = "3fcabfd7d191990dda268b0b3968d945b65eb59a"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.37.0-rc1"
+
+# Every module of this repository is under PhyloStatistics/ (lean4-phylogenetics, docs/CONVENTIONS.md).
+[[lean_lib]]
+name = "PhyloStatistics"
+globs = ["PhyloStatistics.*"]
