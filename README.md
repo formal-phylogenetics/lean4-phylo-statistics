@@ -48,7 +48,7 @@ the sample complexity of ASTRAL is with ASTRAL, in
 ### 1. Fast convergence and information-theoretic sample complexity
 
 - [ ] Erdős, Steel, Székely, Warnow (1999), [A Few Logs Suffice to Build (Almost) All Trees (I)](https://doi.org/10.1002/(SICI)1098-2418(199903)14:2%3C153::AID-RSA3%3E3.0.CO;2-R)
-- [ ] Erdős, Steel, Székely, Warnow (1999), [A Few Logs Suffice to Build (Almost) All Trees, Part II](https://doi.org/10.1016/S0304-3975(99)00028-6)
+- [ ] Erdős, Steel, Székely, Warnow (1999), [A Few Logs Suffice to Build (Almost) All Trees: Part II](https://doi.org/10.1016/S0304-3975(99)00028-6)
 - [ ] Warnow, Moret, St. John (2001), [Absolute Convergence: True Trees from Short Sequences](https://dl.acm.org/doi/10.5555/365411.365443)
 - [ ] Nakhleh et al. (2001), [Designing Fast Converging Phylogenetic Methods](https://doi.org/10.1093/bioinformatics/17.suppl_1.s190)
 - [ ] Mossel (2004), [Phase Transitions in Phylogeny](https://doi.org/10.1090/S0002-9947-03-03382-8)
@@ -75,7 +75,7 @@ the sample complexity of ASTRAL is with ASTRAL, in
 - [ ] Roch, Steel (2015), [Likelihood-Based Tree Reconstruction on a Concatenation of Aligned Sequence Data Sets Can Be Statistically Inconsistent](https://doi.org/10.1016/j.tpb.2014.12.005)
 - [ ] Solís-Lemus, Yang, Ané (2016), [Inconsistency of Species Tree Methods Under Gene Flow](https://doi.org/10.1093/sysbio/syw030)
 - [ ] Nute et al. (2018), [The Performance of Coalescent-Based Species Tree Estimation Methods Under Models of Missing Data](https://doi.org/10.1186/s12864-018-4619-8)
-- [ ] Roch, Nute, Warnow (2019), [Long-Branch Attraction in Species Tree Estimation: Inconsistency of Partitioned Likelihood and Summary Methods](https://doi.org/10.1093/sysbio/syy061)
+- [ ] Roch, Nute, Warnow (2019), [Long-Branch Attraction in Species Tree Estimation: Inconsistency of Partitioned Likelihood and Topology-Based Summary Methods](https://doi.org/10.1093/sysbio/syy061)
 
 ### 4. Identifiability and consistency under insertion–deletion models
 
